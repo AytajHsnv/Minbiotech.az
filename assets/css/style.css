@@ -1433,14 +1433,8 @@ body.dark .about-list .about_box {
     text-align: center;
 }
 .clients .client-img {
-<<<<<<< HEAD
     max-width: 120px;
     border-radius: 100%;
-=======
-    max-width: 80px;
-    border-radius: 100%;
-    overflow: hidden;
->>>>>>> e1ba6e9e4b4233261ad338682ed8eff7627e071a
     border: 2px solid;
 }
 .client-content {

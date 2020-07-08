@@ -1362,7 +1362,7 @@ body.dark .about-list .about_box {
     float: left;
     width: 100%;
     position: relative;
-    padding: 41px 0;
+    padding: 0;
 }
 .why_choose_us_img {
     float: left;
@@ -1374,6 +1374,7 @@ body.dark .about-list .about_box {
 }
 .why_choose_us_img img {
     width: 100%;
+    height: 100%;
 }
 .why_choose_us ul li {
     margin-bottom: 30px;
@@ -1388,22 +1389,65 @@ body.dark .about-list .about_box {
 }
 .web_design {
     float: left;
-    width: 100%;
+    /*width: 100%;*/
     position: relative;
-    padding-left: 15px;
+    padding: 0 0 40px 15px ;
+    
 }
-.why_choose_us ul li h4 {
-    margin-bottom: 5px;
+.web_design h4 {
+    margin-bottom: 20px;
 }
 .why_choose_us ul li:last-child {
     margin-bottom: 0;
 }
-.why_choose_us p {
+.web_design p {
     margin-bottom: 0;
 }
-.why_choose_us h4 span {
+.web_design h4 span {
     font-weight: 600;
     margin-right: 5px;
+}
+.row{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+  }
+@media only screen and (max-width: 600px) {
+    .why_choose_us ul li:before {
+        height: 127px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .why_choose_us ul li:before {
+        height: 103px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .why_choose_us ul li:before {
+        height: 153px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .why_choose_us ul li:before {
+        height: 257px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .why_choose_us ul li:before {
+        height: 233px;
+    }
 }
 /*
 ===================================

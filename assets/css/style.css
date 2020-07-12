@@ -1803,13 +1803,15 @@ path.area {
     float: left;
     position: relative;
 }
-.location_details h3 {
+.location_details h4 {
     margin-bottom: 10px;
     font-size: 22px;
 }
 .location_details p {
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    line-height: 1.8em;
+    font-size: 17px;
 }
 /*
 ===================================

@@ -1814,7 +1814,7 @@ path.area {
     font-size: 17px;
 }
 /* ----------------------------------------------------------------
-     [ 05 Start Hero ]
+     [ 05 Influence of Bioplastic industry Start ]
 -----------------------------------------------------------------*/
 
 .hero .extra-title {
@@ -2085,8 +2085,107 @@ path.area {
 	color: #eee;
 }
 /* ----------------------------------------------------------------
-     [ End Hero ]
+     [ Influence of Bioplastic industry End ]
 -----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Employment by industries Section ]
+-----------------------------------------------------------------*/
+
+.timeline {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #1B1B1B;
+  }
+  
+  .li {
+    transition: all 200ms ease-in;
+  }
+  
+  .timestamp {
+    margin-bottom: 20px;
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+    text-align: center;
+  }
+  /* .date{
+    width: 100px;
+    padding: 0 10px;
+  } */
+  .status {
+      /* padding: 0px 40px; */
+      display: flex;
+      justify-content: center;
+      border-top: 2px solid #D6DCE0;
+      position: relative;
+      transition: all 200ms ease-in;
+    }
+    .status h5 {
+      padding: 0 30px;
+      font-weight: 600;
+    }
+    .status::after {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      border-radius: 25px;
+      border: 1px solid #ddd;
+      position: absolute;
+      top: -15px;
+      left: 0%;
+      transition: all 200ms ease-in;
+    }
+    
+    .li.complete .status {
+      border-top: 2px solid #66DC71;
+    }
+    .li.complete .status::after {
+      background-color: #66DC71;
+      border: none;
+      transition: all 200ms ease-in;
+    }
+    /* .li.complete .status h5 {
+      color: #66DC71;
+    } */
+    .li.complete .status p{
+        color: #131212;
+        font-weight: 400;
+    }
+    
+    @media (min-device-width: 320px) and (max-device-width: 700px) {
+      .timeline {
+        list-style-type: none;
+        display: block;
+      }
+    
+      .li {
+        transition: all 200ms ease-in;
+        display: flex;
+        width: inherit;
+      }
+    
+      .timestamp {
+        width: 100px;
+      }
+    
+      .status:before {
+        left: -8%;
+        top: 30%;
+        transition: all 200ms ease-in;
+      }
+    }
+   
+      /*
+  ===================================
+     Employment by industries Section End
+  ===================================
+  */
 /*
 ===================================
 18 Our Blog

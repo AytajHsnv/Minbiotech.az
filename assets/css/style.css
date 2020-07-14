@@ -1145,6 +1145,18 @@ body.dark .service-box:before {
 ===================================
 */
 
+.about-us-section img{
+    width: 100%;
+    height: 100%
+}
+.about-us-section .item{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+.about_box_content ul li{
+    margin-bottom: 0;
+}
 .about-us-section {
     position: relative;
     width: 100%;
@@ -1154,7 +1166,7 @@ body.dark .service-box:before {
     position: relative;
     width: 100%;
     float: left;
-    padding: 42px 0;
+    padding: 0;
 }
 .about-list {
     width: 100%;
@@ -1180,7 +1192,7 @@ body.dark .service-box:before {
     border: 1px solid #808080;
     font-size: 30px;
     text-align: center;
-    padding: 22px 0;
+    padding: 0 0;
     -webkit-transition: all 0.45s ease-in-out;
     -moz-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out;
@@ -1584,6 +1596,10 @@ body.dark .about-list .about_box {
     -ms-transition: all 0.45s ease-in-out;
     transition: all 0.45s ease-in-out;
 }
+.count-number{
+    font-size: 35px;
+    color: white;
+}
 .facts::before {
     content: "";
     position: absolute;
@@ -1601,6 +1617,9 @@ body.dark .about-list .about_box {
 }
 .facts:hover {
     box-shadow: 0px 16px 3px 0px rgba(0, 0, 0, 0.175);
+}
+.facts:hover .count-number {
+    color: white;
 }
 .facts:hover::before {
     opacity: 1;

@@ -1832,6 +1832,379 @@ path.area {
     line-height: 1.8em;
     font-size: 17px;
 }
+/* ----------------------------------------------------------------
+     [ 05 Influence of Bioplastic industry Start ]
+-----------------------------------------------------------------*/
+
+.hero .extra-title {
+	margin-bottom: 30px;
+}
+.hero .extra-title span {
+	color: #606da6;
+}
+.hero .col-lg-6.image {
+	padding-left: 40px;
+	margin-top: 20px;
+}
+.hero .feature-wrap .feat-inner {
+    height: 100%;
+	padding: 50px 30px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.hero .feature-wrap.active .feat-inner {
+	-webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+	position: relative;
+	z-index: 3;
+}
+.hero .feature-wrap .icon {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 60px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 3;
+	text-align: center;
+	color: #606da6;
+}
+.hero .feature-wrap .icon::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 10px;
+	left: -15px;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+	background-color: #f8f8f8;
+}
+.hero .feature-wrap:hover .feat-inner .icon::after {
+	top: 0;
+	left: 0;
+}
+.hero .feature-wrap .feat-info {
+	overflow: hidden;
+}
+.hero .feature-wrap h5 {
+	font-size: 22px;
+	padding-bottom: 15px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.hero .feature-wrap h5::before {
+	content: '';
+	width: 20px;
+	height: 4px;
+	bottom: 0;
+	position: absolute;
+	background-color: #606da6;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.hero .feature-wrap h6 {
+	color: #777;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	display: table;
+	margin-left: 17px;
+}
+.title::before {
+	content: '';
+	width: 15px;
+	height: 4px;
+	position: absolute;
+	top: 20px;
+	left: -22px;
+	background-color: #606da6;
+}
+.sub-title {
+	color: #777;
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.feat li {
+	margin: 0;
+	padding: 0 5px;
+}
+.feat li div {
+	background-color: #eee;
+	padding: 30px 30px;
+	overflow: hidden;
+}
+.feat {
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: 0;
+}
+.feat img {
+    width: 80%;
+	font-size: 30px;
+	color: #606da6;
+	margin-right: 15px;
+	float: left;
+}
+.feat h6 {
+	font-size: 14px;
+	overflow: hidden;
+	margin-top: 6px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 992px){
+.offset-lg-2 {
+    margin-left: 16.666667%;
+}
+}
+@-webkit-keyframes circles {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0
+	}
+	20% {
+		-webkit-transform: scale(1.44);
+		transform: scale(1.44);
+		opacity: .5
+	}
+	100% {
+		-webkit-transform: scale(3.2);
+		transform: scale(3.2);
+		opacity: 0
+	}
+}
+@-moz-keyframes circles {
+	0% {
+		-moz-transform: scale(1);
+		transform: scale(1);
+		opacity: 0
+	}
+	20% {
+		-moz-transform: scale(1.44);
+		transform: scale(1.44);
+		opacity: .5
+	}
+	100% {
+		-moz-transform: scale(3.2);
+		transform: scale(3.2);
+		opacity: 0
+	}
+}
+@-o-keyframes circles {
+	0% {
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 0
+	}
+	20% {
+		-o-transform: scale(1.44);
+		transform: scale(1.44);
+		opacity: .5
+	}
+	100% {
+		-o-transform: scale(3.2);
+		transform: scale(3.2);
+		opacity: 0
+	}
+}
+@keyframes circles {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 0
+	}
+	20% {
+		-webkit-transform: scale(1.44);
+		-moz-transform: scale(1.44);
+		-o-transform: scale(1.44);
+		transform: scale(1.44);
+		opacity: .5
+	}
+	100% {
+		-webkit-transform: scale(3.2);
+		-moz-transform: scale(3.2);
+		-o-transform: scale(3.2);
+		transform: scale(3.2);
+		opacity: 0
+	}
+}
+.tabs-section .tab-content .image .owl-dots {
+	margin-top: -30px;
+	position: relative;
+	z-index: 7;
+}
+.skills {
+	padding-right: 8px;
+}
+.skills h6 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.skills .skill-progress {
+	height: 22px;
+	width: 100%;
+	background-color: #eaeaea;
+	border-radius: 20px;
+	position: relative;
+	margin: 4px;
+}
+.skills .skill-progress::before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	right: -4px;
+	bottom: -4px;
+	background-color: #eee;
+}
+.skills .skill-progress .progres {
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #606da6;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
+}
+.skills .skill-progress .progres:after {
+	content: attr(data-value);
+	position: absolute;
+	top: 3px;
+	right: 6px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #eee;
+}
+/* ----------------------------------------------------------------
+     [ Influence of Bioplastic industry End ]
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+     [ Employment by industries Section ]
+-----------------------------------------------------------------*/
+
+.timeline {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #1B1B1B;
+  }
+  
+  .li {
+    transition: all 200ms ease-in;
+  }
+  
+  .timestamp {
+    margin-bottom: 20px;
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+    text-align: center;
+  }
+  /* .date{
+    width: 100px;
+    padding: 0 10px;
+  } */
+  .status {
+      /* padding: 0px 40px; */
+      display: flex;
+      justify-content: center;
+      border-top: 2px solid #D6DCE0;
+      position: relative;
+      transition: all 200ms ease-in;
+    }
+    .status h5 {
+      padding: 0 30px;
+      font-weight: 600;
+    }
+    .status::after {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      border-radius: 25px;
+      border: 1px solid #ddd;
+      position: absolute;
+      top: -15px;
+      left: 0%;
+      transition: all 200ms ease-in;
+    }
+    
+    .li.complete .status {
+      border-top: 2px solid #66DC71;
+    }
+    .li.complete .status::after {
+      background-color: #66DC71;
+      border: none;
+      transition: all 200ms ease-in;
+    }
+    /* .li.complete .status h5 {
+      color: #66DC71;
+    } */
+    .li.complete .status p{
+        color: #131212;
+        font-weight: 400;
+    }
+    
+    @media (min-device-width: 320px) and (max-device-width: 700px) {
+      .timeline {
+        list-style-type: none;
+        display: block;
+      }
+    
+      .li {
+        transition: all 200ms ease-in;
+        display: flex;
+        width: inherit;
+      }
+    
+      .timestamp {
+        width: 100px;
+      }
+    
+      .status:before {
+        left: -8%;
+        top: 30%;
+        transition: all 200ms ease-in;
+      }
+    }
+   
+      /*
+  ===================================
+     Employment by industries Section End
+  ===================================
+  */
 /*
 ===================================
 18 Our Blog

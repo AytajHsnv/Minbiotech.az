@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f428bbd5afce797c4e908d5a270af81365fbad77
->>>>>>> 777635ff9b540c811c0447d287f9e27120bed44f
-=======
-
->>>>>>> 79d727321c79820d73027c0470f98e00cf4a229a
 a:hover,
 .high-theme-clr,
 .service-box h4 a:hover,
@@ -37,11 +26,7 @@ a:hover,
 .service-box:hover .service-icon,
 .social-icon li:hover,
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span,
-<<<<<<< HEAD
-.about-list li:hover .about_box,
-=======
 
->>>>>>> 79d727321c79820d73027c0470f98e00cf4a229a
 .owl-theme .owl-nav .owl-prev:hover,
 .owl-theme .owl-nav .owl-next:hover,
 .cssload-loading i,
@@ -56,12 +41,9 @@ footer:before,
 {
 	background-color:#81b441;
 }
-<<<<<<< HEAD
-=======
 .about-list li .about_box, img:hover{
 	fill: #81b441;
 }
->>>>>>> 79d727321c79820d73027c0470f98e00cf4a229a
 .itg-button:hover,
 .owl-theme .owl-dots .owl-dot span,
 .about-list li:hover .about_box,
@@ -79,15 +61,7 @@ circle.plot {
 
 path.area:hover{
 	fill:#81b441;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-=======
 }
->>>>>>> 79d727321c79820d73027c0470f98e00cf4a229a
 a:hover,
 .high-theme-clr,
 .service-box h4 a:hover,
@@ -116,10 +90,6 @@ a:hover,
 .service-box:hover .service-icon,
 .social-icon li:hover,
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span,
-<<<<<<< HEAD
-.about-list li:hover .about_box,
-=======
->>>>>>> 79d727321c79820d73027c0470f98e00cf4a229a
 .owl-theme .owl-nav .owl-prev:hover,
 .owl-theme .owl-nav .owl-next:hover,
 .cssload-loading i,
@@ -151,10 +121,4 @@ circle.plot {
 
 path.area:hover{
 	fill:#81b441;
-<<<<<<< HEAD
->>>>>>> e1ba6e9e4b4233261ad338682ed8eff7627e071a
->>>>>>> f428bbd5afce797c4e908d5a270af81365fbad77
->>>>>>> 777635ff9b540c811c0447d287f9e27120bed44f
-=======
->>>>>>> 79d727321c79820d73027c0470f98e00cf4a229a
 }

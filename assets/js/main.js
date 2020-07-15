@@ -78,8 +78,6 @@ $(window).on("load", function() {
             duration: 15000,
             easing: 'linear',
             step: function() {
-                if(countTo == 200000000)
-                    console.log(this.countNum);
                 if(this.countNum<1000)
                     $this.html((Math.floor(this.countNum)));
                 else
@@ -99,20 +97,10 @@ $(window).on("load", function() {
         }
         return val;
       }
+      //============================
+    // Timeline
     //============================
-    // Search Popup
-    //============================
-	if(helpButton.length){
-		helpButton.on('click', function() {
-			Help.slideToggle(1000, function() {
-				if (helpButton.val() == "close") {
-					helpButton.val("show table");
-				} else {
-					helpButton.val("close");
-				}
-			});
-		});
-	}
+
 
     //========================================
     // Owl Carousel functions Calling
@@ -489,7 +477,6 @@ $(window).on("load", function() {
             easing: 'linear',
             step: function() {
                 if(countTo == 200000000)
-                    console.log(this.countNum);
                 if(this.countNum<1000)
                     $this.html((Math.floor(this.countNum)));
                 else

@@ -1145,6 +1145,18 @@ body.dark .service-box:before {
 ===================================
 */
 
+.about-us-section img{
+    width: 100%;
+    height: 100%
+}
+.about-us-section .item{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+.about_box_content ul li{
+    margin-bottom: 0;
+}
 .about-us-section {
     position: relative;
     width: 100%;
@@ -1154,7 +1166,7 @@ body.dark .service-box:before {
     position: relative;
     width: 100%;
     float: left;
-    padding: 42px 0;
+    padding: 0;
 }
 .about-list {
     width: 100%;
@@ -1180,7 +1192,7 @@ body.dark .service-box:before {
     border: 1px solid #808080;
     font-size: 30px;
     text-align: center;
-    padding: 22px 0;
+    padding: 0 0;
     -webkit-transition: all 0.45s ease-in-out;
     -moz-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out;
@@ -1502,6 +1514,13 @@ body.dark .about-list .about_box {
 }
 /*
 ===================
+Events Section
+======================
+*/
+
+
+/*
+===================
 14 Gallery Section
 ======================
 */
@@ -1576,6 +1595,7 @@ body.dark .about-list .about_box {
     position: relative;
     text-align: center;
     width: 100%;
+    height: 100%;
     padding: 100px 0;
     background-color: #333333;
     -webkit-transition: all 0.45s ease-in-out;
@@ -1583,6 +1603,10 @@ body.dark .about-list .about_box {
     -o-transition: all 0.45s ease-in-out;
     -ms-transition: all 0.45s ease-in-out;
     transition: all 0.45s ease-in-out;
+}
+.count-number{
+    font-size: 35px;
+    color: white;
 }
 .facts::before {
     content: "";
@@ -1602,6 +1626,9 @@ body.dark .about-list .about_box {
 .facts:hover {
     box-shadow: 0px 16px 3px 0px rgba(0, 0, 0, 0.175);
 }
+.facts:hover .count-number {
+    color: white;
+}
 .facts:hover::before {
     opacity: 1;
 }
@@ -1609,11 +1636,11 @@ body.dark .about-list .about_box {
     margin: 10px 0;
 }
 .facts h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
 }
 .facts h3 {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
 }
 /*
@@ -1808,12 +1835,10 @@ path.area {
     font-size: 22px;
 }
 .location_details p {
-    padding-top: 20px;
     color: #333333;
-    margin-top: 40px;
+    /* margin-bottom: 40px; */
     line-height: 1.8em;
     font-size: 19px;
-
 }
 /* ----------------------------------------------------------------
      [ 05 Influence of Bioplastic industry Start ]
@@ -1957,7 +1982,6 @@ path.area {
 	margin-top: 6px;
 	text-transform: uppercase;
 }
-
 
 @media (min-width: 992px){
 .offset-lg-2 {
@@ -2109,7 +2133,7 @@ path.area {
   
   .timestamp {
     margin-bottom: 20px;
-    padding: 0px 5%;
+    /* padding: 0px 5%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2129,7 +2153,7 @@ path.area {
       transition: all 200ms ease-in;
     }
     .status h5 {
-    
+      padding: 0 20px;
       font-weight: 600;
     }
     .status::after {

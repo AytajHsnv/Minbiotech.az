@@ -46,10 +46,16 @@ $(window).on("load", function() {
     //========================================
     // Counter
     //======================================== 	
-	if(countNumber.length){
+
+   /* $('.counter').counterUp({
+        delay: 100,
+        time: 7000
+    });*/
+	/*if(countNumber.length){
 		countNumber.appear(function() {
 			$(this).each(function() {
-				var datacount = $(this).attr('data-count');
+                var datacount = $(this).attr('data-count');
+                var $this = $(this);
 				$(this).find('.counter').delay(6000).countTo({
 					from: 10,
 					to: datacount,
@@ -57,23 +63,44 @@ $(window).on("load", function() {
 					refreshInterval: 50,
 				});
 			});
-		});
-	}
+        });
+    }*/
+    $('.counter').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.html()
+        }).animate({
+            countNum: countTo
+          },
+            
+          {
+            duration: 15000,
+            easing: 'linear',
+            step: function() {
+                if(this.countNum<1000)
+                    $this.html((Math.floor(this.countNum)));
+                else
+                    $this.html(commaSeparateNumber(Math.floor(this.countNum)));
+            },
+            complete: function() {
+                    $this.html(commaSeparateNumber(this.countNum));
+              //alert('finished');
+            }
+          }
+        );
+      });
+      
+      function commaSeparateNumber(val) {
+        while (/(\d+)(\d{3})/.test(val.toString())) {
+          val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+        }
+        return val;
+      }
+      //============================
+    // Timeline
+    //============================
 
-    //============================
-    // Search Popup
-    //============================
-	if(helpButton.length){
-		helpButton.on('click', function() {
-			Help.slideToggle(1000, function() {
-				if (helpButton.val() == "close") {
-					helpButton.val("show table");
-				} else {
-					helpButton.val("close");
-				}
-			});
-		});
-	}
 
     //========================================
     // Owl Carousel functions Calling
@@ -436,7 +463,40 @@ $(window).on("load", function() {
     //========================================
     // Counter
     //======================================== 	
-	if(countNumber.length){
+    $('.counter').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.html()
+        }).animate({
+            countNum: countTo
+          },
+            
+          {
+            duration: 20000,
+            easing: 'linear',
+            step: function() {
+                if(countTo == 200000000)
+                if(this.countNum<1000)
+                    $this.html((Math.floor(this.countNum)));
+                else
+                    $this.html(commaSeparateNumber(Math.floor(this.countNum)));
+            },
+            complete: function() {
+                    $this.html(commaSeparateNumber(this.countNum));
+              //alert('finished');
+            }
+          }
+        );
+      });
+      
+      function commaSeparateNumber(val) {
+        while (/(\d+)(\d{3})/.test(val.toString())) {
+          val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+        }
+        return val;
+      }
+	/*if(countNumber.length){
 		countNumber.appear(function() {
 			$(this).each(function() {
 				var datacount = $(this).attr('data-count');
@@ -448,7 +508,7 @@ $(window).on("load", function() {
 				});
 			});
 		});
-	}
+	}*/
 
     //============================
     // Search Popup

@@ -1,6 +1,8 @@
 /* Ends No Need Style */
 /* Custom Navigation */
-
+.navbar-header{
+	max-height: 80px;
+}
 .navbar-default .navbar-toggle{
 	background-color:#fff;
 }
@@ -715,7 +717,13 @@ header .is-wathemes  .wathemes-dark-to-light  .navbar-form input {
     text-align: center;
     width: 100%;
 }
+@media only screen and (max-width: 1200px) {
+	.navbar-header{
+		max-height: 100px;
+	}
+}
 @media only screen and (min-width: 768px) {
+	
 	.dropdown-menu li .dropdown-menu {
 		margin-top:-42px !important;
 		margin-left:-200px !important;
@@ -1099,6 +1107,7 @@ header .navbar-collapse{
 	.header-logo-center .navbar-header, .header-logo-center .navbar-brand{
 		display: block;
 	}
+	
 	.header-logo-center .navbar .navbar-brand {
 		display: block;
 		line-height: 0;
@@ -1124,10 +1133,16 @@ header .navbar-collapse{
 }
 /* ------------------------
 	MAX 767px 
------------------------- */
+------------------------ 
+*/
+@media (max-width: 767px) and (min-width:600px){
+	.navbar-header{
+		max-height: 60px;
+		
+	}
+}
 @media only screen and (max-width: 767px)
 {
-	
 	.navbar-nav .open .dropdown-menu{
 		padding: 0 0 0 15px;
 	}

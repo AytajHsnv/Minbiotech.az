@@ -249,6 +249,7 @@
 	}
     a.navbar-brand {
         padding: 20px 0;
+        bottom: 80px;
     }
     .top-footer .margin-small:nth-last-child(1) {
         margin-bottom: 0px;
@@ -404,10 +405,12 @@
         font-size: 14px;
     }
     .about-list .about_box {
-        width: 60px;
-        height: 60px;
-        padding: 17px 0;
         font-size: 20px;
+        width: 75px;
+        height: 75px;
+        border: 1px solid #808080;
+        text-align: center;
+        padding: 0 0;
     }
 	.template-heading h3 {
 		font-size: 22px;

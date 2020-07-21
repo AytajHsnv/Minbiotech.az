@@ -956,7 +956,7 @@ header .navbar-collapse{
 	Top Bar 
 	---------------------*/
 	.navbar-header{
-	 max-height: 90px;
+	 	max-height: 65px;
 	}
 	.navbar-brand > img{
 		margin: 0 auto;

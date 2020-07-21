@@ -1186,7 +1186,6 @@ body.dark .service-box:before {
 }
 .about-list .about_box {
     display: inline-block;
-    float: left;
     width: 75px;
     height: 75px;
     border: 1px solid #808080;

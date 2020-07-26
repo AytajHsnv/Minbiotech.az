@@ -38,9 +38,9 @@ a:hover,
 .blog figcaption span ,
 footer:before,
 .popup
-{
+/* {
 	background-color:#8dc63f;
-}
+} */
 .about-list li .about_box, img:hover{
 	fill: #8dc63f;
 }
@@ -101,9 +101,9 @@ a:hover,
 .blog figcaption span ,
 footer:before,
 .popup
-{
+/* {
 	background-color:#8dc63f;
-}
+} */
 .itg-button:hover,
 .owl-theme .owl-dots .owl-dot span,
 .about-list li:hover .about_box,

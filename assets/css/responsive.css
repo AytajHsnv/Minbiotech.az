@@ -202,7 +202,22 @@
     #our_team .margin-small,
     #services .margin-small,
     .top-footer .margin-small {
-        margin-bottom: 30px;
+        width: 100%;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    .widget .logo{
+        width: 50%;
+    }
+    .keep_p{
+        text-align: left;
+    }
+    .social-icon-footer{
+        width: 50%;
+        margin: auto;
+    }
+    .copy_right{
+        margin: auto;
     }
     #our_blog .margin-small:last-child,
     #pricing .margin-small:last-child,
@@ -246,7 +261,7 @@
     footer:before {
         width: 49%;
     }
-	.widget.information ul li a:hover {
+ 	.widget.information ul li a:hover {
 		color: #fff;
 	}
 	.top-footer .widget ul.gallery li {
@@ -469,4 +484,33 @@
 	.full_section_content h2 {
 		font-size: 33px;
 	}
+}
+@media screen and (max-width: 860px) {
+.feature-wrap{
+    width: 100%;
+}
+.footer-row{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    text-align: center;
+}
+.widget .logo{
+    width: 50%;
+}
+.social-icon-footer{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.copy_right{
+    width: 100%;
+    margin: auto;
+    text-align: center !important;
+}
+.keep_p { 
+    margin-left: 10% !important;
+    font-size: 18px !important;
+    
+}
 }

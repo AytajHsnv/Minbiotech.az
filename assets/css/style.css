@@ -2408,13 +2408,18 @@ path.area {
      [ Employment by industries Section ]
 -----------------------------------------------------------------*/
 
-.timeline {
+.second-timeline {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     color: #1B1B1B;
+  }
+
+  .second-timeline-icon{
+      width: 5%;
+      margin-top: 15px;
   }
   
   .li {
@@ -2460,10 +2465,10 @@ path.area {
     }
     
     .li.complete .status {
-      border-top: 2px solid #66DC71;
+      border-top: 2px solid #8dc63f;
     }
     .li.complete .status::after {
-      background-color: #66DC71;
+      background-color: #8dc63f;
       border: none;
       transition: all 200ms ease-in;
     }
@@ -2476,11 +2481,15 @@ path.area {
     }
     
     @media (min-device-width: 320px) and (max-device-width: 700px) {
-      .timeline {
+        .second-timeline {
         list-style-type: none;
         display: block;
       }
     
+      .second-timeline-icon{
+        width: 12% !important;
+        margin-top: -20px !important;
+    }
       .li {
         transition: all 200ms ease-in;
         display: flex;
@@ -2488,7 +2497,7 @@ path.area {
       }
     
       .timestamp {
-        width: 100px;
+        width: 100%;
       }
     
       .status:before {
@@ -2960,7 +2969,35 @@ body.dark .template-form input.itg-button {
 }
 /*
 ===================================
-21 Footer Style
+21 Contact Style
+===================================
+*/
+.contact_information .social-icons{
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+}
+.contact_information .social-icons li{
+margin-right: 20%;
+display: inline-block;
+background: #fff;
+width: 30px;
+height: 30px;
+text-align: center;
+border-radius: 50%;
+padding: 3px 0;
+margin-right: 10px;
+-webkit-transition: all 0.45s ease-in-out;
+-moz-transition: all 0.45s ease-in-out;
+-o-transition: all 0.45s ease-in-out;
+-ms-transition: all 0.45s ease-in-out;
+transition: all 0.45s ease-in-out;
+}
+
+
+/*
+===================================
+22 Footer Style
 ===================================
 */
 
@@ -2976,7 +3013,7 @@ footer {
     position: relative;
     color: #333333;
 }
-footer:before {
+/* footer:before {
     content: "";
     position: absolute;
     width: 41.5%;
@@ -2985,7 +3022,7 @@ footer:before {
     top: 0;
     right: 0;
     left: 0;
-}
+} */
 .top-footer .widget {
     width: 100%;
     float: left;
@@ -2994,22 +3031,23 @@ footer:before {
 }
 .top-footer .widget .logo {
     float: left;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .top-footer .widget p {
     color: #fff;
     line-height: 1.8em;
     margin-bottom: 0;
+    margin-left: 2%;
     clear: both;
 }
-.top-footer .widget .social-icon {
+.top-footer .social-icon {
     text-align: left;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 ul.social-icon-footer {
     float: left;
     position: relative;
-    margin: 30px 0 20px;
+    /* margin: 30px 0 20px; */
 }
 ul.social-icon-footer li {
     display: inline-block;
@@ -3026,6 +3064,13 @@ ul.social-icon-footer li {
     -ms-transition: all 0.45s ease-in-out;
     transition: all 0.45s ease-in-out;
 }
+.social-icon-footer p{
+    color: #fff !important;
+}
+.social-icon-footer{
+    display: flex; 
+    justify-content:space-around
+}
 ul.social-icon-footer li:last-child {
     margin-right: 0;
 }
@@ -3033,8 +3078,14 @@ ul.social-icon-footer li:last-child {
     color: #fff;
     margin-bottom: 30px;
 }
-.information ul li {
+.widget-information ul {
+    display: flex;
+    justify-content: space-around
+ 
+ }
+ .widget-information ul li {
     color: #fff;
+    font-size: 20px;
 }
 .top-footer .widget ul li {
     margin-bottom: 10px;

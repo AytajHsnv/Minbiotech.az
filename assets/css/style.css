@@ -2416,7 +2416,9 @@ path.area {
     justify-content: center;
     color: #1B1B1B;
   }
-
+.second-timeline h5{
+    font-weight: 600 !important;
+}
   .second-timeline-icon{
       width: 5%;
       margin-top: 15px;
@@ -2435,6 +2437,9 @@ path.area {
     font-weight: 100;
     text-align: center;
   }
+  .timestamp h5{
+      margin-top: 20px;
+  }
   /* .date{
     width: 100px;
     padding: 0 10px;
@@ -2443,13 +2448,14 @@ path.area {
       /* padding: 0px 40px; */
       display: flex;
       justify-content: center;
-      border-top: 2px solid #D6DCE0;
+      /* border-top: 2px solid #D6DCE0; */
       position: relative;
       transition: all 200ms ease-in;
     }
     .status h5 {
       padding: 0 20px;
       font-weight: 600;
+      margin-bottom: 20px ;
     }
     .status::after {
       content: "";

@@ -22,7 +22,8 @@ $(window).on("load", function() {
     var scrolls = $('.navbar-nav a[href*="#"]');
     var bodyScroll = $('html, body');
 	var mapDiv = $('#gmap_canvas');
-
+    var dateFirst = $('#dates li:first-child');
+    var dateSecond = $('#dates li:nth-child(2)');
 
     // ============================================
     // Sticky Header
@@ -100,16 +101,37 @@ $(window).on("load", function() {
       //============================
     // Timeline
     //============================
+    
     $(function(){
         $().timelinr({
             orientation: 	'vertical',
             issuesSpeed: 	300,
             datesSpeed: 	100,
             arrowKeys: 		'true',
-            startAt:		3
+            startAt:		0,
+            autoPlay:       'true',
+            autoPlayDirection: 'forward'
         })
+        
     });
+    $( document ).ready(function(){
+        $(window).resize(function() {
+            var widthWin = $(window).width();
+          if (widthWin < 992){
+                 window.location.reload();
+          }
+          if (widthWin < 768){
+            window.location.reload();
+          }
+          if (widthWin > 992){
+            window.location.reload();
+          }
+            if (widthWin > 768){
+                window.location.reload();
+            }
+          });
 
+    })
     //========================================
     // Owl Carousel functions Calling
     //======================================== 	

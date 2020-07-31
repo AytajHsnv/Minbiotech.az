@@ -203,8 +203,8 @@
         width: 100%;
     }
     .mission_vision img {
-        width: 116px;
-        margin: 0 42%;
+        width: 80px;
+        margin: 0 45%;
         /* margin-top: 40px; */
     }
 		#dates {
@@ -379,7 +379,7 @@
         width: 100%;
     }
     .mission_vision img {
-        width: 116px;
+        width: 80px;
         margin: 0 41%;
         /* margin-top: 40px; */
     }
@@ -674,7 +674,7 @@
     }
     .mission_vision img {
         /* width: 116px; */
-        margin: 0 33%;
+        margin: 0 38%;
         /* margin-top: 40px; */
     }
 }
@@ -776,6 +776,7 @@
 .second-timeline{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 .second-timeline-icon{
     display: none;
@@ -811,5 +812,15 @@
 .li.complete .status{
     border-top: none !important;
 }
+}
 
+@media only screen and (min-width: 1201px){
+    .second-timeline-icon{
+        display: block;
+    }
+    .employment{ 
+        display: none !important;
+        /* margin-top: -8px; */
+        /* width: 5% !important; */
+    }
 }

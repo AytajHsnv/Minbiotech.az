@@ -30,7 +30,7 @@ jQuery.fn.timelinr = function(options){
 	  startAt:                  1,            // value: integer, default to 1 (first)
 	  autoPlay:                 'false',      // value: true | false, default to false
 	  autoPlayDirection:        'forward',    // value: forward | backward, default to forward
-	  autoPlayPause:            3000,         // value: integer (1000 = 1 seg), default to 2000 (2segs)
+	  autoPlayPause:            2000,         // value: integer (1000 = 1 seg), default to 2000 (2segs)
 	  dateFirst:               '#dates li:first-child',
       dateSecond:              '#dates li:nth-child(2)'
 	}, options);
@@ -42,7 +42,7 @@ jQuery.fn.timelinr = function(options){
 		}
 		
 		else{
-			$(settings.dateFirst).html('<a href = "#1900" class = "selected">12.02.2019</a>')
+			$(settings.dateFirst).html('<a href = "#1900" class = "selected">11.12.2019</a>')
             $(settings.dateSecond).html('<a href = "#1930">20.02.2020</a>');
 		}
 	  // Checks if required elements exist on page before initializing timelinr | improvement since 0.9.55

@@ -975,7 +975,7 @@ div#main-menu {
     background-repeat: no-repeat;
 }
 
-.banner-section:before {
+/*.banner-section:before {
     /*background-color: #000;
     content: "";
     position: absolute;
@@ -983,8 +983,8 @@ div#main-menu {
     left: 0;
     right: 0;
     bottom: 0;
-	opacity:0.4;*/
-}
+	opacity:0.4;
+}*/
 #banner-typing {
     position: absolute;
     top: 50%;
@@ -1618,10 +1618,13 @@ header{
     margin-right: 5px;
 }
 .row{
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .row > [class*='col-'] {
     display: -webkit-box;

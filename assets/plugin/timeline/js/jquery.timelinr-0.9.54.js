@@ -30,7 +30,7 @@ jQuery.fn.timelinr = function(options){
 	  startAt:                  1,            // value: integer, default to 1 (first)
 	  autoPlay:                 'false',      // value: true | false, default to false
 	  autoPlayDirection:        'forward',    // value: forward | backward, default to forward
-	  autoPlayPause:            2000,         // value: integer (1000 = 1 seg), default to 2000 (2segs)
+	  autoPlayPause:            3500,         // value: integer (1000 = 1 seg), default to 2000 (2segs)
 	  dateFirst:               '#dates li:first-child',
       dateSecond:              '#dates li:nth-child(2)'
 	}, options);

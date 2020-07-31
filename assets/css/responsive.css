@@ -171,7 +171,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
     
     .sticky-header {
         position: fixed;
@@ -198,14 +197,6 @@
 		margin: 40px auto;
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
-    }
-    .hero .feature-wrap .feat-inner {
-        width: 100%;
-    }
-    .mission_vision img {
-        width: 80px;
-        margin: 0 45%;
-        /* margin-top: 40px; */
     }
 		#dates {
 			width: 5%;
@@ -248,7 +239,7 @@
             }
             #issues li img {
                 float: left;
-                width: 65%;
+                width: 67%;
                 margin: 10px 30px 10px 50px;
                 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
@@ -374,14 +365,6 @@
 		margin: 40px auto;
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
-    }
-    .hero .feature-wrap .feat-inner {
-        width: 100%;
-    }
-    .mission_vision img {
-        width: 80px;
-        margin: 0 41%;
-        /* margin-top: 40px; */
     }
 		#dates {
 			width: 5%;
@@ -618,14 +601,6 @@
 		margin: 40px auto;
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
-    }
-    .hero .feature-wrap .feat-inner {
-        width: 100%;
-    }
-    .mission_vision img {
-        width: 116px;
-        margin: 0 41%;
-        /* margin-top: 40px; */
     }
 		#dates {
 			width: 10%;

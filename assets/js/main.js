@@ -22,8 +22,7 @@ $(window).on("load", function() {
     var scrolls = $('.navbar-nav a[href*="#"]');
     var bodyScroll = $('html, body');
 	var mapDiv = $('#gmap_canvas');
-    var dateFirst = $('#dates li:first-child');
-    var dateSecond = $('#dates li:nth-child(2)');
+
 
     // ============================================
     // Sticky Header
@@ -101,7 +100,6 @@ $(window).on("load", function() {
       //============================
     // Timeline
     //============================
-    
     $(function(){
         $().timelinr({
             orientation: 	'vertical',
@@ -115,21 +113,44 @@ $(window).on("load", function() {
         
     });
     $( document ).ready(function(){
+        var ww = $(window).width();
+        var limit = 769;
+
+        function refresh() {
+            ww = $(window).width();
+            var w =  ww<limit ? (location.reload(true)) :  ( ww>limit ? (location.reload(true)) : ww=limit );
+        }
+
+        var tOut;
         $(window).resize(function() {
-            var widthWin = $(window).width();
-          if (widthWin < 992){
-                 window.location.reload();
-          }
-          if (widthWin < 768){
-            window.location.reload();
-          }
-          if (widthWin > 992){
-            window.location.reload();
-          }
-            if (widthWin > 768){
-                window.location.reload();
+            var resW = $(window).width();
+            clearTimeout(tOut);
+            if ( (ww>limit && resW<limit) || (ww<limit && resW>limit) ) {        
+                tOut = setTimeout(refresh, 100);
             }
-          });
+            
+
+            //992
+            var vw = $(window).width();
+            var lim = 992;
+
+            function ref() {
+            vw = $(window).width();
+            var v =  vw<lim ? (location.reload(true)) :  ( vw>lim ? (location.reload(true)) : vw=lim );
+            }
+
+            var tIn;
+            $(window).resize(function() {
+                var resV = $(window).width();
+                clearTimeout(tIn);
+                if ( (vw>lim && resV<lim) || (vw<lim && resV>lim) ) {        
+                    tIn = setTimeout(ref, 100);
+                }
+            });
+
+            //1025
+    
+    });
 
     })
     //========================================

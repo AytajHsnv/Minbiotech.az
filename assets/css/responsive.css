@@ -198,6 +198,11 @@
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
     }
+    .mission_vision img {
+        width: 80px;
+        margin: 0 45%;
+        /* margin-top: 40px; */
+    }
 		#dates {
 			width: 5%;
 			height: 1200px;
@@ -365,6 +370,11 @@
 		margin: 40px auto;
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
+    }
+    .mission_vision img {
+        width: 80px;
+        margin: 0 41%;
+        /* margin-top: 40px; */
     }
 		#dates {
 			width: 5%;

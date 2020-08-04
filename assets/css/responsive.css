@@ -1,4 +1,4 @@
-@media screen and (min-width: 4500px) {
+/* @media screen and (min-width: 4500px) {
     footer:before {
         width: 46%;
     }
@@ -17,29 +17,25 @@
     footer:before {
         width: 41%;
     }
-}
+} */
 @media screen and (min-width: 1751px) and (max-width: 2200px) {
-    footer:before {
+    /* footer:before {
         width: 39%;
-    }
+    } */
 	.top-footer .widget ul.gallery li {
 		max-width: 63px;
 	}
 }
-@media screen and (min-width: 1441px) and (max-width: 1750px) {
-    footer:before {
-        width: 36%;
+@media screen and (min-width: 1441px) {
+    .banner-section{
+        height: 700px;
     }
-    /* .employment{
-        display: block !important;
-        width: 6% !important;
-    } */
 }
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
     footer:before {
         width: 34%;
     }
-}
+} */
 @media screen and (min-width: 1200px){
     .navbar-header a{
         width: 20%;
@@ -482,7 +478,7 @@
     }
     .navbar-default .navbar-toggle {
         background-color: #000;
-        margin: 15px 0;
+        margin: 40px 0 10px;
     }
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
@@ -577,6 +573,9 @@
     }
 }
 @media screen and (min-width: 641px) and (max-width: 767px) {
+    .banner-section{
+        height: 450px;
+    }
     .banner-content h2 {
         font-size: 30px;
     }
@@ -585,6 +584,9 @@
     }
 }
 @media screen and (min-width: 481px) and (max-width: 640px) {
+    .banner-section{
+        height: 400px;
+    }
     .banner-content h2 {
         font-size: 24px;
     }
@@ -601,6 +603,9 @@
     }
 }
 @media only screen and (max-width: 480px) {
+    .banner-section{
+        height: 300px;
+    }
     .navbar-header a{
         width: 40%
     }
@@ -758,6 +763,7 @@
 }
 
 @media screen and (max-width: 1200px){
+    
 .second-timeline{
     display: flex;
     flex-direction: column;

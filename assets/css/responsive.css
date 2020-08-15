@@ -1,4 +1,11 @@
-/* @media screen and (min-width: 4500px) {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media screen and (min-width: 4500px) {
     footer:before {
         width: 46%;
     }
@@ -17,25 +24,29 @@
     footer:before {
         width: 41%;
     }
-} */
+}
 @media screen and (min-width: 1751px) and (max-width: 2200px) {
-    /* footer:before {
+    footer:before {
         width: 39%;
-    } */
+    }
 	.top-footer .widget ul.gallery li {
 		max-width: 63px;
 	}
 }
-@media screen and (min-width: 1441px) {
-    .banner-section{
-        height: 700px;
+@media screen and (min-width: 1441px) and (max-width: 1750px) {
+    footer:before {
+        width: 36%;
     }
+    /* .employment{
+        display: block !important;
+        width: 6% !important;
+    } */
 }
-/* @media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
     footer:before {
         width: 34%;
     }
-} */
+}
 @media screen and (min-width: 1200px){
     .navbar-header a{
         width: 20%;
@@ -174,7 +185,8 @@
         z-index: 999;
         width: 100%;
         background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     }
     body.dark .sticky-header {
         position: fixed;
@@ -182,7 +194,8 @@
         z-index: 999;
         width: 100%;
         background-color: #000;
-        box-shadow: 0 2px 5px rgba(225, 225, 225, 0.1);
+        -webkit-box-shadow: 0 2px 5px rgba(225, 225, 225, 0.1);
+                box-shadow: 0 2px 5px rgba(225, 225, 225, 0.1);
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -193,11 +206,6 @@
 		margin: 40px auto;
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
-    }
-    .mission_vision img {
-        width: 80px;
-        margin: 0 45%;
-        /* margin-top: 40px; */
     }
 		#dates {
 			width: 5%;
@@ -367,11 +375,6 @@
 		position: relative;
 		background: url('../img/all/dot.gif') 3px top repeat-y;
     }
-    .mission_vision img {
-        width: 80px;
-        margin: 0 41%;
-        /* margin-top: 40px; */
-    }
 		#dates {
 			width: 5%;
 			height: 1000px;
@@ -478,7 +481,7 @@
     }
     .navbar-default .navbar-toggle {
         background-color: #000;
-        margin: 40px 0 10px;
+        margin: 15px 0;
     }
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
@@ -573,9 +576,6 @@
     }
 }
 @media screen and (min-width: 641px) and (max-width: 767px) {
-    .banner-section{
-        height: 450px;
-    }
     .banner-content h2 {
         font-size: 30px;
     }
@@ -584,9 +584,6 @@
     }
 }
 @media screen and (min-width: 481px) and (max-width: 640px) {
-    .banner-section{
-        height: 400px;
-    }
     .banner-content h2 {
         font-size: 24px;
     }
@@ -603,9 +600,6 @@
     }
 }
 @media only screen and (max-width: 480px) {
-    .banner-section{
-        height: 300px;
-    }
     .navbar-header a{
         width: 40%
     }
@@ -717,8 +711,13 @@
     width: 100%;
 }
 .footer-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* flex-wrap: wrap; */
     text-align: center;
 }
@@ -763,10 +762,14 @@
 }
 
 @media screen and (max-width: 1200px){
-    
 .second-timeline{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
 }
 .second-timeline-icon{
